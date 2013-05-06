@@ -42,6 +42,7 @@
 
     id workspace = [workspaceWindowControllers[0] valueForKey:@"_workspace"];
     id workspaceArena = [workspace valueForKey:@"_workspaceArena"];
+    NSLog(@"DD-E: derivedDataLocation: %@", [workspaceArena derivedDataLocation]);
     return [[workspaceArena derivedDataLocation] valueForKey:@"_pathString"];
 }
 
